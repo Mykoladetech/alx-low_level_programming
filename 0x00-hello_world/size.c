@@ -4,7 +4,7 @@
  * type the size on the computer."
  * Return: always 0.
  */
-	int main(void);
+	int main(void)
 {
 	int i;
 	char c;
