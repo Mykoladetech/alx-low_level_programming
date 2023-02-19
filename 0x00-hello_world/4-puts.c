@@ -5,7 +5,7 @@
  *  return 0.
  */
 
-int main(void);
+int main(void)
 {
 	puts("\"proogramming is like building a multilingual puzzle");
 
