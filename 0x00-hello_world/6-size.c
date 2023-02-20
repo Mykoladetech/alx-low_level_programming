@@ -1,10 +1,11 @@
 #include<stdio.h>
 /**
- * Main - print the the size of various type base on
+ * main - print the the size of various type base on
  * the computer it is compiled and run on..
  * Return:always 0.
  */
 int main(void)
+
 {
 	printf("the size of int: %lu bytes(s)\n", sizeof(int));
 
