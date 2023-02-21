@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Main function
+ * main -  Main function
  * description: print the alphabets putchar
  * return: always 0
  */
@@ -8,14 +8,10 @@
 
 int main(void)
 {	
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	char x[] = "_putchar";
+	int i;
+	for(i=0; i<=7; i++)
+	_putchar(x[i]);
 	_putchar('\n');
-	return (1);
+	return (0);
 }
