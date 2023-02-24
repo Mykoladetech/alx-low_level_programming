@@ -1,14 +1,19 @@
+
 #include "main.h"
+
 /**
- *	print_numbers -  fuction that print digit, from 0 to 9
- *	Return: 0 to 9, except 3 and 4
- *
+ * print_numbers - print 0-9
+ * return: void
  */
+
 void print_numbers(void)
 {
-	int i;
+	char c;
 
-	for (i = 0; i <= 9; i++)
-	_putchar(i + '0')
-	_putchar('\n')
+	for (c = '0'; c <= '9'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
 }
+
