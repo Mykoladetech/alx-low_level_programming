@@ -3,7 +3,7 @@
 /**
  *
  *	print_to_98 - function to print natural number
- *	0n: function parameter
+ *	@n: function parameter
  *	Return: always 0
  *
  */

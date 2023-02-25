@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *	add - adds two number
- *	0a: para1
- *	0b: para2
+ *	@a: para1
+ *	@b: para2
  *	Return: sum
  *
  */
