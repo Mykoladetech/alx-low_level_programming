@@ -1,4 +1,4 @@
-#include "main.h"
+Zinclude "main.h"
 /**
  *	 _isalpha - function that print alphabets
  *	@c: parameter to be checked
