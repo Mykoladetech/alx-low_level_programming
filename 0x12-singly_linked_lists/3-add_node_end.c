@@ -11,7 +11,7 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list *new;
+	list_t *new;
 	list_t *temp = *head;
 	unsigned int len = 0;
 
@@ -22,7 +22,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (!new)
 	return (NULL);
 
-	new->str = stdup(str);
+	new->str = strdup(str);
 	new->len = len;
 	new->next = NULL;
 

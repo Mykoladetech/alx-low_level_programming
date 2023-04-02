@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 #include <string.h>
-#include "list_h"
+#include "lists.h"
 /**
  *free_list - function that free a list_t list
  *@head: a pointer to the list
