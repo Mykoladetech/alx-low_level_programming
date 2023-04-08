@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <unistd.h>
+#include "main.h"
 /**
  * create_file - Appends text to the end of a file.
  *
@@ -14,7 +15,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	size_t ear, rint = 0;
+	int ear, rint = 0;
 	int file;
 
 	if (filename == NULL)
@@ -31,7 +32,7 @@ int create_file(const char *filename, char *text_content)
 	return (-1);
 	}
 	ear = write(file, text_content, rint);
-	if (ear > -1)
+	if (ear < -1)
 	{
 	close(file);
 	return (-1);

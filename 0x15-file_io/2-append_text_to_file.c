@@ -5,6 +5,7 @@
 #include <string.h>
 #include <errno.h>
 #include <unistd.h>
+#include "main.h"
 /**
  * append_text_to_file - Appends text to the end of a file.
  *
