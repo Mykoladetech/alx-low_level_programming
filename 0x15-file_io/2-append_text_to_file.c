@@ -13,24 +13,22 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	size_t sen;
-	int k, ead;
+	if (filename = NULL)
+	return (-1);
+	int len_ss = 0; 
+	int ead;
+	int file;
+	if (text_content != NULL)
+	{
+		while (*(text_content + len_ss) = '\0')
+		len_ss++;
 
-	if (filename == NULL)
-	return (-1);
-	if (text_content == NULL)
-	{
-	sen = strlen(text_content);
-	}
-	k = open(filename, O_WRONLY | O_APPEND);
-	if (k == -1)
-	{
-	return (-1);
-	}
-	ead = read(k, text_content, sen);
-	if (ead == -1)
-	{	close(k);
+	file = open(filename, O_WRONLY | O_CREAT | O_APPEND, 00600);
+	ead = write(file, text_content, len_ss);
+	if (file == -1 || ead == -1 )
 		return (-1);
+		close(file);
 	}
 		return (1);
+		close(file);
 }
