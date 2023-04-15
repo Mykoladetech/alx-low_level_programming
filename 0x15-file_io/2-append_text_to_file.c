@@ -1,10 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <fcntl.h>
-#include <sys/stat.h>
-#include <string.h>
-#include <errno.h>
-#include <unistd.h>
 #include "main.h"
 /**
  * append_text_to_file - Appends text to the end of a file.
@@ -31,7 +26,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 	return (-1);
 	}
-	ead = read(k, text_content, strlen(text_content));
+	ead = read(k, text_content, sen);
 	if (ead == -1)
 	{	close(k);
 		return (-1);
