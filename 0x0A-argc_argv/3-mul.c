@@ -12,9 +12,9 @@ int main(int argc, char *argv[])
 {
 	int i = 1, sum = 1;
 
-	if ((argc < 3) || (argc > 3))
+	if (argc < 3 || argc > 3)
 	{
-	printf("errror");
+	printf("error\n");
 	return (1);
 	}
 	while (i <= 2)
