@@ -41,5 +41,6 @@ char *str_concat(char *s1, char *s2)
 			rat++, cat++;
 		}
 	}
+		buff[rat] = '\0';
 		return (buff);
 }
