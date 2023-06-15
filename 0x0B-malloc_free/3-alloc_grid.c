@@ -33,9 +33,9 @@ int **alloc_grid(int width, int height)
 				if (buff[x] == NULL)
 				{
 					for (; x >= 0; x--)
-					
+
 						free(buff[x]);
-					
+
 					free(buff);
 					return (NULL);
 				}
