@@ -2,9 +2,21 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- *
- *	print_all - Prints multiple values based on the provided format.
- *	@format: A string specifying the format of the values.
+ * print_all - Prints multiple values based on the provided format.
+ * @format: A string specifying the format of the values to be printed.
+ *           The format string can contain 'c' for char, 'i' for integer,
+ *           'f' for float, and 's' for string.
+ *           Each format specifier must be followed by the corresponding
+ *           argument.
+ *           If format is NULL or an empty string, nothing will be printed.
+ *           If a format specifier doesn't match the provided argument,
+ *           "(nil)" will be printed for strings, and 0 for numeric types.
+ *           Unknown format specifiers are ignored.
+ *           The format string must be terminated with a NULL.
+ *           Example: "cis" - char, integer, string.
+ *                    "ff" - float, float.
+ *                    "i"  - integer.
+ *                    "sif" - string, integer, float.
  */
 void print_all(const char * const format, ...)
 {
